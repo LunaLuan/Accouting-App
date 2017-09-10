@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_margin="10dp"
+	android:layout_height="wrap_content">
+
+	<RelativeLayout
+		android:id="@+id/item_fund_rlSummary"
+		android:padding="10dp"
+		android:background="#F48FB1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<TextView
+			android:id="@+id/item_fund_tvName"
+			android:textSize="15sp"
+			android:text="Quỹ dự phòng thương...."
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+		<TextView
+			android:id="@+id/item_fund_tvAmount"
+			android:text="+1.000.000 VND"
+			android:layout_alignParentRight="true"
+			android:layout_width="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_height="wrap_content"/>
+	</RelativeLayout>
+
+	<LinearLayout
+		android:visibility="gone"
+		android:id="@+id/item_fund_llDetail"
+		android:padding="10dp"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/item_fund_tvPercent"
+			android:text="(10% thu nhập)"
+			android:layout_marginBottom="10dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+		<TextView
+			android:id="@+id/item_fund_tvDetail"
+			android:text="- Mục đích sử dụng: Trả nợ, có hay không có lãi.
+Nếu không có nợ, tích lũy nó và mua những món đồ xa xỉ mà bạn thích (VD: xe, điện thoại, quần áo, trang sức, mỹ phẩm…)
+Đừng vay tiền mua trước rồi trả sau, vì đó là nguyên nhân dẫn đến hầu hết tình trạng tài chính tồi tệ."
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+</LinearLayout>
